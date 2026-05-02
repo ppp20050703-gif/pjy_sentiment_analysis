@@ -1,0 +1,80 @@
+{
+  "task": "多类别细粒度情绪分类",
+  "labels": [
+    "喜悦",
+    "满意",
+    "赞赏",
+    "失望",
+    "愤怒",
+    "厌恶",
+    "中性"
+  ],
+  "dataset_size": 1193,
+  "label_distribution": {
+    "喜悦": 206,
+    "满意": 294,
+    "赞赏": 80,
+    "失望": 266,
+    "愤怒": 187,
+    "厌恶": 80,
+    "中性": 80
+  },
+  "train_size": 955,
+  "test_size": 238,
+  "labeling_method": "教材二分类数据 + 情绪关键词弱标注 + 中性模板补充",
+  "best_model": "多类别规则模型：情绪关键词",
+  "metrics": [
+    {
+      "model": "多类别规则模型：情绪关键词",
+      "accuracy": 0.9663865546218487,
+      "macro_precision": 0.9829424307036246,
+      "macro_recall": 0.9398721497778101,
+      "macro_f1": 0.9565488924494038,
+      "key": "emotion_rules",
+      "category": "可解释规则基线",
+      "cv_accuracy_mean": 0.9622472237232758,
+      "cv_accuracy_std": 0.008030299379244403,
+      "cv_macro_f1_mean": 0.9438091889863702,
+      "cv_macro_f1_std": 0.011032015542397949
+    },
+    {
+      "model": "多类别机器学习：TF-IDF + 朴素贝叶斯",
+      "accuracy": 0.8739495798319328,
+      "macro_precision": 0.9208742805841897,
+      "macro_recall": 0.8592282820527962,
+      "macro_f1": 0.8759894983966922,
+      "key": "emotion_nb_tfidf",
+      "category": "向量化方法扩展对比",
+      "cv_accuracy_mean": 0.8893222491693364,
+      "cv_accuracy_std": 0.01614212888759122,
+      "cv_macro_f1_mean": 0.8769312491124366,
+      "cv_macro_f1_std": 0.024789417185116087
+    },
+    {
+      "model": "多类别机器学习：BoW + 朴素贝叶斯",
+      "accuracy": 0.8319327731092437,
+      "macro_precision": 0.903223864258347,
+      "macro_recall": 0.7862753203803224,
+      "macro_f1": 0.7814542215675652,
+      "key": "emotion_nb_bow",
+      "category": "教材机器学习方法扩展",
+      "cv_accuracy_mean": 0.8591605107784321,
+      "cv_accuracy_std": 0.023642106249745116,
+      "cv_macro_f1_mean": 0.8322342476122989,
+      "cv_macro_f1_std": 0.03583298155002992
+    },
+    {
+      "model": "多类别基线：多数类",
+      "accuracy": 0.24789915966386555,
+      "macro_precision": 0.035414165666266505,
+      "macro_recall": 0.14285714285714285,
+      "macro_f1": 0.056758056758056764,
+      "key": "emotion_majority",
+      "category": "实验下限",
+      "cv_accuracy_mean": 0.2464398520837694,
+      "cv_accuracy_std": 0.001582816434699483,
+      "cv_macro_f1_mean": 0.05648970346547414,
+      "cv_macro_f1_std": 0.0002911565759923256
+    }
+  ]
+}

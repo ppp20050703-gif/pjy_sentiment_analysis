@@ -1,0 +1,7 @@
+# 基础二分类和标准库多分类实验无需第三方依赖。
+# 安装以下依赖后，可启用 scikit-learn 高级多分类模型组。
+jieba>=0.42.1
+scikit-learn>=1.5
+pandas>=2.2
+matplotlib>=3.9
+joblib>=1.4

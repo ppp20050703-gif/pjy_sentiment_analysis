@@ -1,0 +1,5 @@
+﻿key,model,category,accuracy,macro_precision,macro_recall,macro_f1,cv_accuracy_mean,cv_accuracy_std,cv_macro_f1_mean,cv_macro_f1_std
+emotion_rules,多类别规则模型：情绪关键词,可解释规则基线,0.9664,0.9829,0.9399,0.9565,0.9622,0.0080,0.9438,0.0110
+emotion_nb_tfidf,多类别机器学习：TF-IDF + 朴素贝叶斯,向量化方法扩展对比,0.8739,0.9209,0.8592,0.8760,0.8893,0.0161,0.8769,0.0248
+emotion_nb_bow,多类别机器学习：BoW + 朴素贝叶斯,教材机器学习方法扩展,0.8319,0.9032,0.7863,0.7815,0.8592,0.0236,0.8322,0.0358
+emotion_majority,多类别基线：多数类,实验下限,0.2479,0.0354,0.1429,0.0568,0.2464,0.0016,0.0565,0.0003

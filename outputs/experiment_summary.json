@@ -1,0 +1,80 @@
+{
+  "data_path": "C:\\Users\\shinineyes\\Desktop\\NLP\\DZY\\文本情感分析教材代码\\data\\sentiment.csv",
+  "dataset_size": 1000,
+  "label_distribution": {
+    "负面": 500,
+    "正面": 500
+  },
+  "train_size": 800,
+  "test_size": 200,
+  "tokenizer": "char_bigram",
+  "max_features": 3000,
+  "best_model": "论文方向：TF-IDF + MaxEnt(Logistic)",
+  "metrics": [
+    {
+      "model": "论文方向：TF-IDF + MaxEnt(Logistic)",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "key": "maxent_tfidf_paper",
+      "category": "Pang等情感分类机器学习路线",
+      "cv_accuracy_mean": 0.999,
+      "cv_accuracy_std": 0.0022360679774997916,
+      "cv_macro_f1_mean": 0.998999974999375,
+      "cv_macro_f1_std": 0.002236123880596804
+    },
+    {
+      "model": "改进对比：TF-IDF + 朴素贝叶斯",
+      "accuracy": 0.995,
+      "macro_precision": 0.995049504950495,
+      "macro_recall": 0.995,
+      "macro_f1": 0.9949998749968749,
+      "key": "nb_tfidf_improved",
+      "category": "向量化方法对比",
+      "cv_accuracy_mean": 0.9870000000000001,
+      "cv_accuracy_std": 0.005700877125495695,
+      "cv_macro_f1_mean": 0.9869968240352985,
+      "cv_macro_f1_std": 0.005703750688560924
+    },
+    {
+      "model": "教材复现：BoW + 朴素贝叶斯",
+      "accuracy": 0.99,
+      "macro_precision": 0.9901960784313726,
+      "macro_recall": 0.99,
+      "macro_f1": 0.98999899989999,
+      "key": "nb_bow_textbook",
+      "category": "教材第9章机器学习情感分类",
+      "cv_accuracy_mean": 0.982,
+      "cv_accuracy_std": 0.008366600265340763,
+      "cv_macro_f1_mean": 0.9819914452985167,
+      "cv_macro_f1_std": 0.008373268182366058
+    },
+    {
+      "model": "教材复现：情感词典计分",
+      "accuracy": 0.805,
+      "macro_precision": 0.8374267064940812,
+      "macro_recall": 0.8049999999999999,
+      "macro_f1": 0.8001998001998002,
+      "key": "lexicon_textbook",
+      "category": "教材第9章词典法",
+      "cv_accuracy_mean": 0.842,
+      "cv_accuracy_std": 0.013509256086106309,
+      "cv_macro_f1_mean": 0.8386027770745498,
+      "cv_macro_f1_std": 0.014142924652753068
+    },
+    {
+      "model": "多数类基线",
+      "accuracy": 0.5,
+      "macro_precision": 0.25,
+      "macro_recall": 0.5,
+      "macro_f1": 0.3333333333333333,
+      "key": "majority",
+      "category": "实验下限",
+      "cv_accuracy_mean": 0.5,
+      "cv_accuracy_std": 0.0,
+      "cv_macro_f1_mean": 0.3333333333333333,
+      "cv_macro_f1_std": 0.0
+    }
+  ]
+}

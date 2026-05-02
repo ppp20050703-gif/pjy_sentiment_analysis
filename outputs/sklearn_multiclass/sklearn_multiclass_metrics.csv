@@ -1,0 +1,6 @@
+﻿key,model,category,accuracy,macro_precision,macro_recall,macro_f1,cv_accuracy_mean,cv_accuracy_std,cv_macro_f1_mean,cv_macro_f1_std
+sk_linear_svc,sklearn多分类：TF-IDF + LinearSVC,scikit-learn机器学习库模型,1.0000,1.0000,1.0000,1.0000,0.9891,0.0218,0.9712,0.0576
+sk_logistic,sklearn多分类：TF-IDF + LogisticRegression,scikit-learn机器学习库模型,1.0000,1.0000,1.0000,1.0000,0.9882,0.0215,0.9706,0.0573
+sk_sgd,sklearn多分类：TF-IDF + SGDClassifier,scikit-learn机器学习库模型,1.0000,1.0000,1.0000,1.0000,0.9891,0.0218,0.9712,0.0576
+sk_random_forest,sklearn多分类：TF-IDF + RandomForest,scikit-learn机器学习库模型,0.9916,0.9940,0.9952,0.9945,0.9857,0.0203,0.9751,0.0440
+sk_nb_tfidf,sklearn多分类：TF-IDF + MultinomialNB,scikit-learn机器学习库模型,0.9582,0.9708,0.9463,0.9558,0.9505,0.0104,0.9370,0.0396

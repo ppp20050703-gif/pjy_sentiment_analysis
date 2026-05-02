@@ -1,0 +1,94 @@
+{
+  "enabled": true,
+  "task": "scikit-learn多类别细粒度情绪分类",
+  "labels": [
+    "喜悦",
+    "满意",
+    "赞赏",
+    "失望",
+    "愤怒",
+    "厌恶",
+    "中性"
+  ],
+  "dataset_size": 1193,
+  "label_distribution": {
+    "喜悦": 206,
+    "满意": 294,
+    "赞赏": 80,
+    "失望": 266,
+    "愤怒": 187,
+    "厌恶": 80,
+    "中性": 80
+  },
+  "train_size": 954,
+  "test_size": 239,
+  "best_model_key": "sk_linear_svc",
+  "best_macro_f1": 1.0,
+  "metrics": [
+    {
+      "model": "sklearn多分类：TF-IDF + LinearSVC",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "key": "sk_linear_svc",
+      "category": "scikit-learn机器学习库模型",
+      "cv_accuracy_mean": 0.9890756302521009,
+      "cv_accuracy_std": 0.02184873949579833,
+      "cv_macro_f1_mean": 0.9711994271392769,
+      "cv_macro_f1_std": 0.05760114572144644
+    },
+    {
+      "model": "sklearn多分类：TF-IDF + LogisticRegression",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "key": "sk_logistic",
+      "category": "scikit-learn机器学习库模型",
+      "cv_accuracy_mean": 0.9882388101684189,
+      "cv_accuracy_std": 0.021491510532111322,
+      "cv_macro_f1_mean": 0.970606745855134,
+      "cv_macro_f1_std": 0.05731629743648238
+    },
+    {
+      "model": "sklearn多分类：TF-IDF + SGDClassifier",
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "key": "sk_sgd",
+      "category": "scikit-learn机器学习库模型",
+      "cv_accuracy_mean": 0.9890756302521009,
+      "cv_accuracy_std": 0.02184873949579833,
+      "cv_macro_f1_mean": 0.9711994271392769,
+      "cv_macro_f1_std": 0.05760114572144644
+    },
+    {
+      "model": "sklearn多分类：TF-IDF + RandomForest",
+      "accuracy": 0.9916317991631799,
+      "macro_precision": 0.9939531368102796,
+      "macro_recall": 0.9951573849878935,
+      "macro_f1": 0.9944806619322925,
+      "key": "sk_random_forest",
+      "category": "scikit-learn机器学习库模型",
+      "cv_accuracy_mean": 0.9857213178158293,
+      "cv_accuracy_std": 0.020345871373067998,
+      "cv_macro_f1_mean": 0.9750828681769675,
+      "cv_macro_f1_std": 0.04399842733080071
+    },
+    {
+      "model": "sklearn多分类：TF-IDF + MultinomialNB",
+      "accuracy": 0.9581589958158996,
+      "macro_precision": 0.9707792207792207,
+      "macro_recall": 0.9462947198113765,
+      "macro_f1": 0.9558170846686252,
+      "key": "sk_nb_tfidf",
+      "category": "scikit-learn机器学习库模型",
+      "cv_accuracy_mean": 0.950543229844239,
+      "cv_accuracy_std": 0.010417479927704303,
+      "cv_macro_f1_mean": 0.9370054208500113,
+      "cv_macro_f1_std": 0.039574406813753564
+    }
+  ]
+}

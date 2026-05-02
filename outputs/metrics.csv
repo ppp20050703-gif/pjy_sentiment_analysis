@@ -1,0 +1,6 @@
+﻿key,model,category,accuracy,macro_precision,macro_recall,macro_f1,cv_accuracy_mean,cv_accuracy_std,cv_macro_f1_mean,cv_macro_f1_std
+maxent_tfidf_paper,论文方向：TF-IDF + MaxEnt(Logistic),Pang等情感分类机器学习路线,1.0000,1.0000,1.0000,1.0000,0.9990,0.0022,0.9990,0.0022
+nb_tfidf_improved,改进对比：TF-IDF + 朴素贝叶斯,向量化方法对比,0.9950,0.9950,0.9950,0.9950,0.9870,0.0057,0.9870,0.0057
+nb_bow_textbook,教材复现：BoW + 朴素贝叶斯,教材第9章机器学习情感分类,0.9900,0.9902,0.9900,0.9900,0.9820,0.0084,0.9820,0.0084
+lexicon_textbook,教材复现：情感词典计分,教材第9章词典法,0.8050,0.8374,0.8050,0.8002,0.8420,0.0135,0.8386,0.0141
+majority,多数类基线,实验下限,0.5000,0.2500,0.5000,0.3333,0.5000,0.0000,0.3333,0.0000

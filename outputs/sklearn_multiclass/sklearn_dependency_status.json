@@ -1,0 +1,4 @@
+{
+  "enabled": false,
+  "reason": "当前 Python 环境未安装 scikit-learn。运行 python -m pip install --target vendor scikit-learn jieba pandas matplotlib joblib 后可启用。"
+}
